@@ -10,8 +10,7 @@
 $ npm start CHAPTER_NUMBER
 ```
 
----
-
-| chapter | name           |
-| :-----: | -------------- |
-|    0    | Hello, Apollo! |
+| chapter | name                |
+| :-----: | ------------------- |
+|    0    | Hello, Apollo!      |
+|    1    | Hello, TypeGraphQL! |
