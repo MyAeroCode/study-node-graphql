@@ -1,0 +1,33 @@
+{
+    "name": "server-typegraphql",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "npx ts-node ./src"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MyAeroCode/server-typegraphql.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MyAeroCode/server-typegraphql/issues"
+    },
+    "homepage": "https://github.com/MyAeroCode/server-typegraphql#readme",
+    "dependencies": {
+        "apollo-server": "^2.14.1",
+        "class-validator": "^0.12.2",
+        "graphql": "^15.0.0",
+        "reflect-metadata": "^0.1.13",
+        "type-graphql": "^1.0.0-rc.2"
+    },
+    "devDependencies": {
+        "@types/node": "^14.0.6",
+        "ts-node": "^8.10.2",
+        "typescript": "^3.9.3"
+    }
+}
