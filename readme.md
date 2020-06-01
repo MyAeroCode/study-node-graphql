@@ -10,8 +10,9 @@
 $ npm start CHAPTER_NUMBER
 ```
 
-| chapter | name                |
-| :-----: | ------------------- |
-|    0    | Hello, Apollo!      |
-|    1    | Hello, TypeGraphQL! |
-|    2    | DataTypes           |
+| chapter | name                                   |
+| :-----: | -------------------------------------- |
+|    0    | Hello, Apollo!                         |
+|    1    | Hello, TypeGraphQL!                    |
+|    2    | `DataTypes`                            |
+|    3    | `InputType, ArgsType` and `ScalarType` |
