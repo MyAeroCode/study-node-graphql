@@ -14,3 +14,4 @@ $ npm start CHAPTER_NUMBER
 | :-----: | ------------------- |
 |    0    | Hello, Apollo!      |
 |    1    | Hello, TypeGraphQL! |
+|    2    | DataTypes           |
