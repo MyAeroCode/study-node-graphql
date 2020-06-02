@@ -17,3 +17,4 @@ $ npm start CHAPTER_NUMBER
 |    2    | `DataTypes`                            |
 |    3    | `InputType, ArgsType` and `ScalarType` |
 |    4    | `EnumType`                             |
+|    5    | `Inheritance`                          |
