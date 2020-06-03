@@ -22,3 +22,4 @@ $ npm start CHAPTER_NUMBER
 |    7    | `Generic`                                |
 |    8    | `Subscription`                           |
 |    9    | `Field Resolver` and `@Root`             |
+|   10    | `UnionType`                              |
