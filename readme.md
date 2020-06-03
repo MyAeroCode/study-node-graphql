@@ -23,3 +23,4 @@ $ npm start CHAPTER_NUMBER
 |    8    | `Subscription`                           |
 |    9    | `Field Resolver` and `@Root`             |
 |   10    | `UnionType`                              |
+|   11    | `Validation`                             |
