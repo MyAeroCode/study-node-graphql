@@ -20,3 +20,4 @@ $ npm start CHAPTER_NUMBER
 |    5    | `Inheritance`                            |
 |    6    | `InterfaceType`                          |
 |    7    | `Generic`                                |
+|    8    | `Subscription`                           |
