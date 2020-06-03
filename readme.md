@@ -21,3 +21,4 @@ $ npm start CHAPTER_NUMBER
 |    6    | `InterfaceType`                          |
 |    7    | `Generic`                                |
 |    8    | `Subscription`                           |
+|    9    | `Field Resolver` and `@Root`             |
