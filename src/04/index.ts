@@ -5,6 +5,7 @@ import {
     Int,
     Arg,
     buildSchemaSync,
+    Mutation,
 } from "type-graphql";
 import { ApolloServer } from "apollo-server";
 
@@ -25,7 +26,7 @@ registerEnumType(CounterCommand, {
 class CounterResolver {
     private cnt: number = 0;
 
-    @Query(() => Int)
+    @Mutation(() => Int)
     count(@Arg("command", () => CounterCommand) command: CounterCommand) {
         switch (command) {
             case CounterCommand.UP: {
@@ -41,6 +42,11 @@ class CounterResolver {
             }
         }
         return this.cnt;
+    }
+
+    @Query(() => String)
+    hello(): string {
+        return "world!";
     }
 }
 

@@ -59,7 +59,7 @@ enum CounterCommand {
 class CounterResolver {
     private cnt: number = 0;
 
-    @Query(() => Int)
+    @Mutation(() => Int)
     //                                 v
     count(@Arg("command", () => CounterCommand) command: CounterCommand) {
         switch (command) {
