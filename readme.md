@@ -24,3 +24,4 @@ $ npm start CHAPTER_NUMBER
 |    9    | `Field Resolver` and `@Root`             |
 |   10    | `UnionType`                              |
 |   11    | `Validation`                             |
+|   12    | `Context` and `Authorization`            |
