@@ -26,3 +26,4 @@ $ npm start CHAPTER_NUMBER
 |   11    | `Validation`                             |
 |   12    | `Context` and `Authorization`            |
 |   13    | `Dependency Injection`                   |
+|   14    | `Middleware`                             |
