@@ -29,3 +29,4 @@ $ npm start CHAPTER_NUMBER
 |   14    | `Middleware`                             |
 |   15    | `Extension`                              |
 |   16    | `Complexity` and `Apollo Plugin`         |
+|   17    | `Custom Decorator`                       |
