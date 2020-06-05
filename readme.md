@@ -28,3 +28,4 @@ $ npm start CHAPTER_NUMBER
 |   13    | `Dependency Injection`                   |
 |   14    | `Middleware`                             |
 |   15    | `Extension`                              |
+|   16    | `Complexity` and `Apollo Plugin`         |
