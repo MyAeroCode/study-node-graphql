@@ -20,6 +20,7 @@
     "homepage": "https://github.com/MyAeroCode/server-typegraphql#readme",
     "dependencies": {
         "apollo-server": "^2.14.1",
+        "apollo-server-core": "^2.14.2",
         "class-validator": "^0.12.2",
         "graphql": "^15.0.0",
         "graphql-query-complexity": "^0.6.0",
