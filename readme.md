@@ -37,3 +37,4 @@ $ npm start CHAPTER_NUMBER
 |   22    | `File upload` and `File Download`        |
 |   23    | `Logging`                                |
 |   24    | `Health check`                           |
+|   25    | `Testing`                                |
