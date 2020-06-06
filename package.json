@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "npx mocha -r ts-node/register ./src/**/*.test.ts",
         "start": "npx ts-node ./src"
     },
     "repository": {
@@ -19,11 +19,14 @@
     },
     "homepage": "https://github.com/MyAeroCode/server-typegraphql#readme",
     "dependencies": {
+        "@types/chai": "^4.2.11",
         "apollo-server": "^2.14.1",
         "apollo-server-cache-memcached": "^0.6.5",
         "apollo-server-cache-redis": "^1.2.1",
         "apollo-server-core": "^2.14.2",
         "apollo-server-plugin-response-cache": "^0.5.2",
+        "apollo-server-testing": "^2.14.2",
+        "chai": "^4.2.0",
         "class-validator": "^0.12.2",
         "graphql": "^15.0.0",
         "graphql-query-complexity": "^0.6.0",
@@ -34,7 +37,9 @@
         "typedi": "^0.8.0"
     },
     "devDependencies": {
+        "@types/mocha": "^7.0.2",
         "@types/node": "^14.0.6",
+        "mocha": "^7.2.0",
         "ts-node": "^8.10.2",
         "typescript": "^3.9.3"
     }
