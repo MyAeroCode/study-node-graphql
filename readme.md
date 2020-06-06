@@ -36,3 +36,4 @@ $ npm start CHAPTER_NUMBER
 |   21    | `Automatic Persisted Queries`            |
 |   22    | `File upload` and `File Download`        |
 |   23    | `Logging`                                |
+|   24    | `Health check`                           |
