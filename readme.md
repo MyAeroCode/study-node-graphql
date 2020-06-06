@@ -34,3 +34,4 @@ $ npm start CHAPTER_NUMBER
 |   19    | `Cache Control`                          |
 |   20    | `Cache`                                  |
 |   21    | `Automatic Persisted Queries`            |
+|   22    | `File upload` and `File Download`        |
