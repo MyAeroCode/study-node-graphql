@@ -32,3 +32,4 @@ $ npm start CHAPTER_NUMBER
 |   17    | `Custom Decorator`                       |
 |   18    | `Directive`                              |
 |   19    | `Cache Control`                          |
+|   20    | `Cache`                                  |
