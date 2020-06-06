@@ -31,3 +31,4 @@ $ npm start CHAPTER_NUMBER
 |   16    | `Complexity` and `Apollo Plugin`         |
 |   17    | `Custom Decorator`                       |
 |   18    | `Directive`                              |
+|   19    | `Cache Control`                          |
