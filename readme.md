@@ -33,3 +33,4 @@ $ npm start CHAPTER_NUMBER
 |   18    | `Directive`                              |
 |   19    | `Cache Control`                          |
 |   20    | `Cache`                                  |
+|   21    | `Automatic Persisted Queries`            |
