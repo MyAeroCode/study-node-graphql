@@ -20,7 +20,7 @@
     "homepage": "https://github.com/MyAeroCode/server-typegraphql#readme",
     "dependencies": {
         "@types/chai": "^4.2.11",
-        "apollo-server": "^2.14.1",
+        "apollo-server": "^2.14.2",
         "apollo-server-cache-memcached": "^0.6.5",
         "apollo-server-cache-redis": "^1.2.1",
         "apollo-server-core": "^2.14.2",
