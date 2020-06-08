@@ -1,11 +1,4 @@
-import {
-    Query,
-    buildSchemaSync,
-    Resolver,
-    Mutation,
-    ObjectType,
-    Field,
-} from "type-graphql";
+import { Query, buildSchemaSync, Resolver, Mutation } from "type-graphql";
 import { ApolloServer } from "apollo-server";
 
 //
@@ -14,28 +7,10 @@ import { ApolloServer } from "apollo-server";
 //
 
 /**
- * GraphQL에서 사용되는 오브젝트 타입을 정의합니다.
+ * 쿼리용 리졸버를 정의합니다.
  */
-@ObjectType()
-class HelloObject {
-    /**
-     * String!을 반환하는 "hello_q" 필드를 정의합니다.
-     */
-    @Field((type) => String)
-    hello_q!: string;
-
-    /**
-     * String!을 반환하는 "hello_m" 필드를 정의합니다.
-     */
-    @Field((type) => String)
-    hello_m!: string;
-}
-
-/**
- * "HelloObject"의 필드에 값을 결정하는 리졸버를 정의합니다.
- */
-@Resolver((of) => HelloObject)
-class HelloObjectQueryResolver {
+@Resolver()
+class QueryResolver {
     //
     // 이제 "hello_q" 필드는 Query의 진입점으로 사용할 수 있습니다.
     @Query(() => String)
@@ -45,10 +20,10 @@ class HelloObjectQueryResolver {
 }
 
 /**
- * "HelloObject"의 필드에 값을 결정하는 리졸버를 정의합니다.
+ * 뮤테이션용 리졸버를 정의합니다.
  */
-@Resolver((of) => HelloObject)
-class HelloObjectMutationResolver {
+@Resolver()
+class MutationResolver {
     //
     // 이제 "hello_m" 필드는 Mutation의 진입점으로 사용할 수 있습니다.
     @Mutation(() => String)
@@ -58,7 +33,7 @@ class HelloObjectMutationResolver {
 }
 
 const schema = buildSchemaSync({
-    resolvers: [HelloObjectQueryResolver, HelloObjectMutationResolver],
+    resolvers: [QueryResolver, MutationResolver],
 });
 
 export const server = new ApolloServer({
