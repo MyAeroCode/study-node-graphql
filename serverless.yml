@@ -1,0 +1,29 @@
+#
+# 람다함수 이름
+service: study-graphql-server
+
+#
+# AWS 람다 스펙
+provider:
+    runtime: nodejs12.x
+    name: aws
+    stage: dev
+    region: ap-northeast-2
+    memorySize: 128
+    timeout: 5
+
+#
+# 핸들러 경로와, 해당 핸들러를 노출시킬 경로.
+functions:
+    main:
+        handler: src/26/index.handler
+        events:
+            - http:
+                  path: /graphql
+                  method: post
+
+#
+# 플러그인 부분
+plugins:
+    - serverless-plugin-typescript
+    - serverless-offline

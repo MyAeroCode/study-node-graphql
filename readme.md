@@ -38,3 +38,4 @@ $ npm start CHAPTER_NUMBER
 |   23    | `Logging`                                |
 |   24    | `Health check`                           |
 |   25    | `Testing`                                |
+|   26    | `Deploy to AWS Lambda`                   |
