@@ -148,7 +148,7 @@ class BinaryOperatorObject {
 }
 ```
 
-그리고, 다음과 같이 `AdderObject`와 `SubtracterObject`를 정의합니다. 이 때, 한 쪽에는 `exec`위에 `@Field()`를 달아놓고, 나머지 한 쪽에는 달지 않겠습니다.
+그리고, 다음과 같이 `AdderObject`와 `SubtractorObject`를 정의합니다. 이 때, 한 쪽에는 `exec`위에 `@Field()`를 달아놓고, 나머지 한 쪽에는 달지 않겠습니다.
 
 ```ts
 @ObjectType()
@@ -163,7 +163,7 @@ class AdderObject extends BinaryOperatorObject {
 }
 
 @ObjectType()
-class SubtracterObject extends BinaryOperatorObject {
+class SubtractorObject extends BinaryOperatorObject {
     operatorName(): string {
         return "subtract";
     }
@@ -188,7 +188,7 @@ type AdderObject {
   exec(a: Int!, b: Int!): Float!
 }
 
-type SubtracterObject {
+type SubtractorObject {
   operatorName: String!
   exec: Float!
 }
@@ -196,7 +196,7 @@ type SubtracterObject {
 
 <br/>
 
-스키마를 보면 `AdderObject`와 `SubtracterObject`의 차이점이 확연하게 드러납니다. `@Field()`를 사용하지 않았던 `AdderObject`는 부모의 `Field`를 그대로 가져온 반면에, `@Field()`를 다시 사용한 `SubtracterObject`는 부모에서 정의한 `@Arg` 데코레이터가 손실되었죠.
+스키마를 보면 `AdderObject`와 `SubtractorObject`의 차이점이 확연하게 드러납니다. `@Field()`를 사용하지 않았던 `AdderObject`는 부모의 `Field`를 그대로 가져온 반면에, `@Field()`를 다시 사용한 `SubtractorObject`는 부모에서 정의한 `@Arg` 데코레이터가 손실되었죠.
 
 <br/>
 

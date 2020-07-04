@@ -38,7 +38,7 @@ class AdderObject extends BinaryOperatorObject {
 }
 
 @ObjectType()
-class SubtracterObject extends BinaryOperatorObject {
+class SubtractorObject extends BinaryOperatorObject {
     operatorName(): string {
         return "subtract";
     }
@@ -63,8 +63,8 @@ class BaseBinaryOperatorQueryResolver {
         throw new Error("'adderOperator()' not implemented.");
     }
 
-    @Query(() => SubtracterObject)
-    subtracterOperator(): SubtracterObject {
+    @Query(() => SubtractorObject)
+    subtracterOperator(): SubtractorObject {
         throw new Error("'subtracterOperator()' not implemented.");
     }
 }
@@ -72,14 +72,14 @@ class BaseBinaryOperatorQueryResolver {
 @Resolver()
 export class BinaryOperatorQueryResolver extends BaseBinaryOperatorQueryResolver {
     randomOperator(): BinaryOperatorObject {
-        return Math.random() < 0.5 ? new AdderObject() : new SubtracterObject();
+        return Math.random() < 0.5 ? new AdderObject() : new SubtractorObject();
     }
 
     adderOperator(): AdderObject {
         return new AdderObject();
     }
 
-    subtracterOperator(): SubtracterObject {
-        return new SubtracterObject();
+    subtracterOperator(): SubtractorObject {
+        return new SubtractorObject();
     }
 }
