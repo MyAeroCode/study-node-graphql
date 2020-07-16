@@ -92,6 +92,43 @@ plugins:
 
 <br/>
 
+#### CORS
+
+먼저, 핸들러에 `CORS` 관련 옵션을 설정합니다.
+
+```ts
+export const handler = lambdaServer.createHandler({
+    cors: {
+        origin: "*",
+        credentials: true,
+    },
+});
+```
+
+<br/>
+
+`serverless.yml`에도 `CORS` 관련 옵션을 설정합니다. `GQL`을 담은 요청 메세지는 `Content-Type`을 헤더에 담아 보내므로 이를 허용해야 합니다. 그리고 `Apollo Playground`는 쿼리를 보낼 때 `apollo-query-plan-experimental`, `x-apollo-tracing`, `x-insight-include-tracing`을 헤더에 담아 보내므로 이 또한 허용해야 합니다.
+
+```yml
+#
+# 핸들러 경로와, 해당 핸들러를 노출시킬 경로.
+functions:
+    main:
+        handler: src/26/index.handler
+        events:
+            - http:
+                  path: /graphql
+                  method: post
+                  cors:
+                      headers:
+                          - content-type
+                          - apollo-query-plan-experimental
+                          - x-apollo-tracing
+                          - x-insights-include-tracing
+```
+
+<br/>
+
 #### 오프라인 환경에서 실행
 
 다음 명령어로 로컬환경에서 람다를 테스트할 수 있습니다.

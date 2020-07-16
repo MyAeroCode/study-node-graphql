@@ -21,6 +21,12 @@ functions:
             - http:
                   path: /graphql
                   method: post
+                  cors:
+                      headers:
+                          - content-type
+                          - apollo-query-plan-experimental
+                          - x-apollo-tracing
+                          - x-insights-include-tracing
 
 #
 # 플러그인 부분

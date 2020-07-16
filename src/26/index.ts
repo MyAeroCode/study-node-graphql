@@ -21,4 +21,9 @@ export const server = new ApolloServer({ schema });
 //
 // for lambda
 const lambdaServer = new ApolloLambda({ schema });
-export const handler = lambdaServer.createHandler({});
+export const handler = lambdaServer.createHandler({
+    cors: {
+        origin: "*",
+        credentials: true,
+    },
+});
