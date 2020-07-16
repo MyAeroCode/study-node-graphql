@@ -29,7 +29,7 @@
         "graphql": "^15.2.0",
         "graphql-query-complexity": "^0.6.0",
         "graphql-subscriptions": "^1.1.0",
-        "graphql-tools": "^6.0.12",
+        "graphql-tools": "^6.0.13",
         "reflect-metadata": "^0.1.13",
         "type-graphql": "^1.0.0-rc.3",
         "typedi": "^0.8.0"
